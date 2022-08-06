@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="Image/x-icon" href="/icon/icon1.png" rel="icon">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/chief-slider.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>MovieSearch</title>
+</head>
+
+<body>
+    <header>
+        <h2>MovieSearch</h2>
+    </header>
+    <main>
+        <article id="search-box">
+                <span class="icon"><i class="fa fa-search"></i></span>
+                <input type="text" name="text" id="search"   class="search" placeholder="Search movie">
+                <input type="button" name="button" class="button" value="Search" data-slide="next" onclick="search() ">
+
+        </article>
+        <article id="error-box">
+        
+        </article>
+        <div class="slider">
+            <div class="slider__container">
+                <div class="slider__wrapper">
+                    <div class="slider__items" id="slider__items" onclick="">
+                    </div>
+                </div>
+            </div>
+            <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+            <a href="#" class="slider__control" data-slide="prev"></a>
+            <a href="#" class="slider__control" data-slide="next" onclick="nextPage()"></a>
+        </div>
+
+    </main>
+
+    
+    <footer>
+        <p>Alexandr Kasyan</p>
+    </footer>
+    <script defer src="/scripts/chief-slider.js"></script>
+    <script src="/scripts/script.js"></script>
+</body>
+
+</html>

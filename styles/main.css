@@ -1,0 +1,311 @@
+@font-face {
+    font-family: "VinnytsiaCity";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto"),
+        url("/fonts/VinnytsiaCity.ttf") format("ttf"),
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "VinnytsiaCity", "Arial", sans-serif;
+}
+
+@media (min-width: 300px) {
+    .slider__item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .search {
+        width: 70%;
+        padding-left: 9%;
+    }
+
+    .button {
+        width: 25%;
+    }
+
+    .year__movie,
+    .name__movie {
+        font-weight: bold;
+        text-align: center;
+        width: 80%;
+        margin-left: 7.5vw;
+        margin-top: 0.5em;
+        color: #242525;
+    }
+
+    .movie-info {
+        width: 80.1%;
+        height: 50vh;
+        top: 11.45%;
+        margin-left: 10%;
+        font-size: 0.8em;
+    }
+}
+
+
+@media (min-width: 400px) {
+    .slider__item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .search {
+        width: 70%;
+        padding-left: 7%;
+    }
+
+    .button {
+        width: 25%;
+    }
+    .year__movie,
+    .name__movie {
+        font-weight: bold;
+        text-align: center;
+        width: 80%;
+        margin-left: 7.5vw;
+        margin-top: 0.5em;
+        color: #242525;
+    }
+
+    .movie-info {
+        width: 80.1%;
+        height: 50vh;
+        top: 11.45%;
+        margin-left: 10%;
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 600px) {
+    .slider__item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .search {
+        width: 80%;
+        padding-left: 6%;
+    }
+
+    .button {
+        width: 15%;
+    }
+
+    .movie-info {
+        width: 40.1%;
+        height: 50vh;
+        top: 11.5%;
+        margin-left: 4.9%;
+        font-size: 0.8em;
+    }
+    .year__movie,
+    .name__movie {
+        font-weight: bold;
+        text-align: center;
+        width: 80%;
+        margin-left: 3.8vw;
+        margin-top: 0.5em;
+        color: #242525;
+    }
+}
+
+/* на больших экранах (ширина больше 1200px) – 3 слайда */
+@media (min-width: 800px) {
+    .slider__item {
+        flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%;
+    }
+
+    .search {
+        width: 80%;
+        padding-left: 5%;
+    }
+
+    .button {
+        width: 15%;
+    }
+
+    .movie-info {
+        width: 26.5%;
+        height: 49.9vh;
+        top: 11.5%;
+        margin-left: 3.3%;
+        font-size: 0.8em;
+    }
+    .year__movie,
+    .name__movie {
+        font-weight: bold;
+        text-align: center;
+        width: 80%;
+        margin-left: 2.5vw;
+        margin-top: 0.5em;
+        color: #242525;
+    }
+}
+
+@media (min-width: 1200px) {
+    .slider__item {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .search {
+        width: 80%;
+        padding-left: 4%;
+    }
+
+    .button {
+        width: 10%;
+    }
+
+    .movie-info {
+        width: 20%;
+        height: 49.7vh;
+        top: 12%;
+        margin-left: 2.5%;
+    }
+
+    .year__movie,
+    .name__movie {
+        font-weight: bold;
+        text-align: center;
+        width: 80%;
+        margin-left: 1.85vw;
+        margin-top: 0.5em;
+        color: #242525;
+    }
+}
+
+
+header,
+footer {
+    color: #ffffff;
+    background-color: #252A36;
+    text-align: center;
+    padding: 1em;
+}
+
+.slider__item {
+    text-align: center;
+}
+
+footer {
+    margin-top: 2em;
+}
+
+.fa-star {
+    color: yellow;
+    padding: 0.5em;
+}
+
+main {
+    margin: 0 auto;
+    width: 75%;
+}
+
+#search-box {
+    padding: 4em 0 4em;
+}
+
+form {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+input {
+    padding: 4px 10px;
+    border: 0;
+    font-size: 16px;
+}
+
+.icon {
+    position: absolute;
+    margin-left: 1%;
+    margin-top: 0.5%;
+    z-index: 1;
+    color: #A8A8A8;
+}
+
+.search {
+    border: 1px solid #E7EAED;
+    border-radius: 0.2em;
+}
+
+.button {
+    background-color: #D62D1B;
+    color: #ffffff;
+    border-radius: 0.2em;
+}
+
+.name__movie {
+    height: 6vh;
+}
+
+
+.year__movie,
+.name__movie {
+    font-weight: bold;
+    text-align: center;
+    color: #242525;
+    white-space: nowrap; /* Текст не переносится */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+    text-overflow: ellipsis; 
+}
+
+.score {
+    margin-left: 1.4vw;
+    color: white;
+
+}
+
+.poster__movie img {
+    width: 80%;
+    height: 50vh;
+    object-fit: cover
+}
+
+.poster__movie img {
+    width: 80%;
+    height: 50vh;
+    object-fit: cover
+}
+
+.movie-info {
+    position: absolute;
+    z-index: 2;
+    background-color: #252a36a4;
+    color: white;
+    display: none;
+    text-align: left;
+    padding: 1em;
+
+}
+
+.title__movie{
+    padding-bottom: 1em;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+}
+
+body:hover .movie-info {
+    display: none;
+}
+
+.slider__control {
+    z-index: 10;
+}
+
+.name__movie,
+.poster__movie,
+.year__movie,
+.score {
+    position: relative;
+    z-index: 1;
+}
